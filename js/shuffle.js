@@ -1,21 +1,20 @@
 // JavaScript Document
 
 jQuery(function($){
-	// cache container
+	//	Cache container
 	var $container = $('#container');
-	// initialize isotope
 	
-	$container.isotope({ filter: '.home' });
+	//	Initialize isotope	
+	$container.isotope({ filter: '*' });
 	
-	// filter items when filter link is clicked
+	//	Filter items when filter link is clicked
+	
 	$('#mainMenu a').click(function(){
-	  var selector = $(this).attr('data-filter');
-	  $container.isotope({ filter: selector });
-	  
-	  //Add active class to pills
-	  $('#mainMenu').find("li").removeClass('active');
-	  $(this).parent().addClass("active");
-	  return false;
+		var selector = $(this).attr('data-filter');
+		$container.isotope({ filter: selector });	  
+		$('#mainMenu').find("li").removeClass('active');	//	Toggle active class to pills
+		$(this).parent().addClass("active");
+		return false;
 	});
-
+	
 });

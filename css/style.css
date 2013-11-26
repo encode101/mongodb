@@ -66,7 +66,7 @@
 
 .item{height:150px; width:150px; border:1px solid #000; float:left; margin:10px;}
 .motherBlock{height:200px; width:400px; border:1px solid #CCC; margin:0 30px 30px 0;}
-.element{width:150px; margin:20px 20px 0px 0; border:1px solid #CCC; padding:20px; text-align:center; border-radius:4px;}
+.element{width:250px; min-height:100px; margin:20px 20px 0px 0; border:1px solid #CCC; padding:20px; text-align:center; border-radius:4px; cursor:pointer;}
 .element:hover{box-shadow:0 0 10px 0px #CCC; border:1px solid #DDD;}
 #filters{margin:30px 0; padding:0px;}
 #filters li{float:left; margin:0 10px; list-style:none;}
@@ -75,3 +75,13 @@
 .cust-hspacer-20{height:20px;}
 .cust-hspacer-30{height:30px;}
 .container{border:1px solid #EEE; padding:20px; border-radius:4px; min-height:500px;}
+
+.listing{list-style:none; margin:0px 20px; padding:0px;}
+.title{color:#003366;}
+
+.pimage{margin:20px;}
+
+body{overflow-y:scroll;}
+.price{color:#609; text-align:left;}
+
+.title{background:#003333; color:#FFF; padding:10px;}
